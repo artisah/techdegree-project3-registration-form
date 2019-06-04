@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    line-height: 1.6;
+    background: #eee;
+    color: #aaa9a9;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    background: rgb(39, 38, 38); 
+    color: #fff;
+    font-size: 1.8rem;
+    word-spacing: 0.4rem;
+    padding: 1.2rem;  
+    margin-top: 0;
+
+}
+
+form {
+    padding: 1.3rem 1rem;
+}
+
+h2,
+legend {
+    color: rgb(39, 38, 38); 
+    font-size: 1.9rem;
+    font-weight: 700;
+
+}
+
+select,
+option,
+input,
+label,
+button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #aaa9a9;
+}
+
+.row input,
+.row select,
+.row textarea {
+   padding: 2rem 1rem;
+   background: #eee;
+   border: 1px solid transparent;
+   border-radius: 10px;
+}
+
+label {
+    text-transform: capitalize;
+}
+
+  ::placeholder {
+    color: #aaa9a9;
+    opacity: 1;
+  }
+
+
+h1,
+.sub-heading {
+    text-align: center;
+
+}
+
+
+
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1000px;
+    background: #fff;
+    padding: 0 20px;
+}
+
+.row {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;    
+}
+
+
+
+
+.zip input {
+    width: 50%;
+}
+
+.newsletter label {
+    font-size: 1.2rem;
+}
+
+
+/* Media Query */
+@media (min-width: 768px) {
+    .row {
+        flex-direction: row;
+     }
+
+     .row label {
+         /* flex-basis: 12rem;
+         flex-shrink: 0;
+         flex-grow: 0; */
+         flex: 0 0 12rem;
+     }
+
+     .row input,
+     .row select,
+     .row textarea {
+        flex: 1 1 0;
+    }
+
+}
