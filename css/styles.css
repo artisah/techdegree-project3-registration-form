@@ -1,3 +1,7 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
 * {
     box-sizing: border-box;
 }
@@ -23,7 +27,6 @@ h1 {
     word-spacing: 0.4rem;
     padding: 2rem 0;
     margin-top: 0;
-
 }
 
 hr {
@@ -34,7 +37,6 @@ fieldset {
     border: none;
     padding: 0;
     margin-top: 2rem;
-
 }
 
 h2,
@@ -42,7 +44,6 @@ legend {
     color: rgb(39, 38, 38); 
     font-size: 1.9rem;
     font-weight: 700;
-
 }
 
 h2
@@ -70,7 +71,7 @@ button {
     background:lightseagreen;
     margin-top: 1.7rem;
     font-weight: 700;
-    padding: 1.5rem 0;
+    padding: 1.3rem 0;
     border-radius: 10px;
 }
 
@@ -78,7 +79,6 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
- 
 }
 
 label {
@@ -87,14 +87,15 @@ label {
     display: inline-block;
     width: 90%;
     margin-top: 10px
-
 }
+
 input[type="radio"],
 input[type="checkbox"] {
   margin: 20px 14px 0 0;
   background-color: blue;
 }
-  ::placeholder {
+
+::placeholder {
     color: #aaa9a9;
     opacity: 1;
     text-align: right;
@@ -104,16 +105,14 @@ input[type="checkbox"] {
 h1,
 .sub-heading {
     text-align: center;
-
 }
 
 
-
-
-
-
+/* ================================= 
+  Layout Containers styles
+==================================== */
 .wrapper {
-    background: #fff;
+    background: #FFFFCC;
     width: 90%;
     margin: 0 auto;
 }
@@ -122,11 +121,16 @@ h1,
     width: 85%;
     margin: 0 auto;
     max-width: 1000px;
+   
 }
 
+
+/* ================================= 
+  Element Styles
+==================================== */
 .row input,
 .row select,
-textarea
+ textarea
  {
    padding: 1.5rem 1rem;
    background: #eee;
@@ -134,10 +138,22 @@ textarea
    border-radius: 10px;
 }
 
+input,
+textarea {
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color  1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    background-color: rgb(180, 193, 207);
+}
+
 textarea {
     width:100%;
-    margin-top:1.5rem;
-    
 }
 
 .row {
@@ -146,17 +162,9 @@ textarea {
     flex-direction: column;    
 }
 
-
-
-
 .zip input {
     width: 50%;
 }
-
-/* .newsletter label {
-    font-size: 1.2rem;
-    padding: 0;    
-} */
 
 .thick {
     border: 3px solid #000;
@@ -173,23 +181,37 @@ footer {
     padding: 1.5rem;
 }
 
-/* Media Query */
+/* ================================= 
+  Media Queries Styles
+==================================== */
+
 @media (min-width: 768px) {
+
+    .container { 
+        width: 65%;
+    }
+
     .row {
         flex-direction: row;
      }
 
      .row label {
-         /* flex-basis: 12rem;
-         flex-shrink: 0;
-         flex-grow: 0; */
-         flex: 0 0 12rem;
+         flex: 0 0 12rem;   
      }
 
      .row input,
      .row select,
      .row textarea {
         flex: 1 1 0;
+        padding: 1rem 1rem;
+    }
+
+     .sub-heading {
+        font-size: 1.1rem;
+    }
+
+    .zip input {
+        flex: 0 1 40%;
     }
 
 }

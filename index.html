@@ -38,17 +38,17 @@
 
                     <div class="row">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone"> 
+                        <input type="tel" id="phone" name="phone" placeholder="phone"> 
                     </div>
 
                     <div class="row">
                         <label for="address">Street Address</label>
-                        <input type="text" id="address" name="user_address"> 
+                        <input type="text" id="address" name="user_address" placeholder="address"> 
                     </div>
 
                     <div class="row">
                         <label for="city">City</label>
-                        <input type="text" id="city" name="user_city"> 
+                        <input type="text" id="city" name="user_city" placeholder="city"> 
                     </div>
 
                     <div class="row">
@@ -111,7 +111,7 @@
 
                     <div class="row zip">
                         <label for="zip">Zip Code</label>
-                        <input type="text" id="zip" name="user_zip"> 
+                        <input type="text" id="zip" name="user_zip" placeholder="Zip"> 
                     </div>
                 </fieldset>       
             <hr>
@@ -119,25 +119,25 @@
                 <fieldset>
                     <legend>Newsletter</legend>
                 
-                    <label class="heading_text">Select the newsletters you would like to recive</label></br>
+                    <label class="heading_text">Select the newsletters you would like to receive</label><br>
 
-                    <input type="checkbox" name="user_newletter" id="newletter_html" value="html_news">
-                    <label for="newletter">HTML News</label></br>
+                    <input type="checkbox" name="user_newletter" id="newletter_html" value="html_news" checked>
+                    <label for="newletter_html">HTML News</label><br>
 
                     <input type="checkbox" name="user_newletter" id="newletter_css" value="css_news">
-                    <label for="newletter">CSS News</label></br>
+                    <label for="newletter_css">CSS News</label><br>
 
                     <input type="checkbox" name="user_newletter" id="newletter_javascript" value="javascript_news">
-                    <label for="newletter">Javascript News</label></br>
+                    <label for="newletter_javascript">Javascript News</label><br>
 
-                    <label class="heading_text">Newsletter format</label></br>
-                    <input type="radio" name="user_newsletter_format" id="newsletter_format">
-                    <label for="newsletter_format">HTML</label></br>
+                    <label class="heading_text">Newsletter format</label><br>
+                    <input type="radio" name="user_newsletter_format" id="newsletter_format_html" value="format_html" checked>
+                    <label for="newsletter_format_html">HTML</label><br>
 
-                    <input type="radio" name="user_newsletter_format" id="newsletter_format">
-                    <label for="newsletter_format">Plain text</label></br>
+                    <input type="radio" name="user_newsletter_format" id="newsletter_format_text" value="format_text">
+                    <label for="newsletter_format_text">Plain text</label><br>
 
-                    <label  class="heading_text" for="other">Other topics you'd like to hear about</label></br>
+                    <label  class="heading_text" for="other">Other topics you'd like to hear about</label><br>
                     <textarea rows="4" id="other" name="user_other"> </textarea>
 
                 </fieldset>
