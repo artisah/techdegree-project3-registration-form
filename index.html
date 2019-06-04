@@ -14,13 +14,13 @@
         <header>
             <h1>the code review</h1>
         </header>
-    
+     <div class="container">
         <div class="sub-heading">
             <h2>Signup for our newsletter</h2>
             <p>Get the latest news on how your code is doing
                  right in your inbox</p>
         </div>
-        <hr>
+        <hr class="thick">
         <hr>
     
             <form action="#" method="post">
@@ -111,7 +111,7 @@
 
                     <div class="row zip">
                         <label for="zip">Zip Code</label>
-                        <input type="number" id="zip" name="user_zip"> 
+                        <input type="text" id="zip" name="user_zip"> 
                     </div>
                 </fieldset>       
             <hr>
@@ -119,31 +119,33 @@
                 <fieldset>
                     <legend>Newsletter</legend>
                 
-                    <p>Select the newsletters you would like to recive</p>
-                    <input type="checkbox" name="newletter" id="user_newletter">
+                    <label class="heading_text">Select the newsletters you would like to recive</label></br>
+
+                    <input type="checkbox" name="user_newletter" id="newletter_html" value="html_news">
                     <label for="newletter">HTML News</label></br>
 
-                    <input type="checkbox" name="newletter" id="user_newletter">
+                    <input type="checkbox" name="user_newletter" id="newletter_css" value="css_news">
                     <label for="newletter">CSS News</label></br>
 
-                    <input type="checkbox" name="newletter" id="user_newletter">
-                    <label for="newletter">Javascript News</label></div</br>
+                    <input type="checkbox" name="user_newletter" id="newletter_javascript" value="javascript_news">
+                    <label for="newletter">Javascript News</label></br>
 
-                    <p>Newsletter format</p>
-                    <input type="radio" name="newsletter_format" id="user_newsletter_format">
+                    <label class="heading_text">Newsletter format</label></br>
+                    <input type="radio" name="user_newsletter_format" id="newsletter_format">
                     <label for="newsletter_format">HTML</label></br>
 
-                    <input type="radio" name="newsletter_format" id="user_newsletter_format">
+                    <input type="radio" name="user_newsletter_format" id="newsletter_format">
                     <label for="newsletter_format">Plain text</label></br>
 
-                    <label for="feedback">Other topics you'd like to hear about</label></br>
-                    <textarea name="feedback" id="user_feedback"> </textarea>
+                    <label  class="heading_text" for="other">Other topics you'd like to hear about</label></br>
+                    <textarea rows="4" id="other" name="user_other"> </textarea>
+
                 </fieldset>
             </div> <!-- /newletter div-->
 
-            <button id="sign_up" name="user_sign_up" > Sign Up</button>
+            <button type="submit" id="sign_up" name="user_sign_up" > Sign Up</button>
         </form>   
-    
+    </div>
         <footer>
             <span>Copyright The Code Review</span>
         </footer> 

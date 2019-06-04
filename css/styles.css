@@ -10,6 +10,10 @@ body {
     color: #aaa9a9;
 }
 
+header {
+    max-width: 100%;
+    margin: auto;
+  }
 
 h1 {
     text-transform: uppercase;
@@ -17,13 +21,20 @@ h1 {
     color: #fff;
     font-size: 1.8rem;
     word-spacing: 0.4rem;
-    padding: 1.2rem;  
+    padding: 2rem 0;
     margin-top: 0;
 
 }
 
-form {
-    padding: 1.3rem 1rem;
+hr {
+    border-top: 3px solid #000;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-top: 2rem;
+
 }
 
 h2,
@@ -34,32 +45,59 @@ legend {
 
 }
 
+h2
+ {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0.5rem;;
+}
+
 select,
 option,
-input,
-label,
-button {
+input
+ {
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #aaa9a9;
 }
 
-.row input,
-.row select,
-.row textarea {
-   padding: 2rem 1rem;
-   background: #eee;
-   border: 1px solid transparent;
-   border-radius: 10px;
+button {
+    width: 100%;
+    color: #fff;
+    font-size: 1.7rem;
+    background:lightseagreen;
+    margin-top: 1.7rem;
+    font-weight: 700;
+    padding: 1.5rem 0;
+    border-radius: 10px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+ 
 }
 
 label {
     text-transform: capitalize;
-}
+    padding-left: 0;
+    display: inline-block;
+    width: 90%;
+    margin-top: 10px
 
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 20px 14px 0 0;
+  background-color: blue;
+}
   ::placeholder {
     color: #aaa9a9;
     opacity: 1;
+    text-align: right;
   }
 
 
@@ -72,12 +110,34 @@ h1,
 
 
 
+
+
 .wrapper {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1000px;
     background: #fff;
-    padding: 0 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container { 
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.row input,
+.row select,
+textarea
+ {
+   padding: 1.5rem 1rem;
+   background: #eee;
+   border: 1px solid transparent;
+   border-radius: 10px;
+}
+
+textarea {
+    width:100%;
+    margin-top:1.5rem;
+    
 }
 
 .row {
@@ -93,10 +153,25 @@ h1,
     width: 50%;
 }
 
-.newsletter label {
+/* .newsletter label {
     font-size: 1.2rem;
+    padding: 0;    
+} */
+
+.thick {
+    border: 3px solid #000;
 }
 
+.heading_text {
+    text-transform: initial;
+    margin-top: 2rem;
+}
+
+footer {
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+}
 
 /* Media Query */
 @media (min-width: 768px) {
